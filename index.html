@@ -5,14 +5,118 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Modak&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>The Spiced Pups</title>
 </head>
 
 <body>
-</body>
+
+<!--Jumbotron Banner-->
+
+<header class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>The Spice Pups</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--First Row of Content-->
+
+
+<div class="container-fluid p-0">
+    <div class="row">
+        <div class="col">
+            
+            <!--Start of Accordion-->
+            
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header text-center" id="meetThePups">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link btn-lg" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><h1>Meet the Pups</h1>
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="meetThePups" data-parent="#accordion">
+                        <div class="card-body text-center my-auto">
+                            <p>The Spice Pups are a group Chi-Weenies (Chihuahua mixed with Weener dogs (Dachschund). Their names are Cinnamon, Basil and Rosemary. They love each other and their dads very much.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header text-center" id="cinnamon">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><h1>Cinnamon</h1>
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="cinnamon" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="media-body text-center my-auto">
+                                    <p>Cinnamon is the eldest Spice Pup. She is a very reserved, and regal puppy. However, when times call for it, she can show her feisty side with a quick nip to her siblings if they are getting out of control. Affectionately, called "Baby girl," she still retains the princess side of her personality.</p>
+                                </div>
+                                <img src="img/testpicture.jpg" alt="filler" class="col-5 d-block">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header text-center" id="basil">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expaned="false" aria-controls="collapseThree"><h1>Basil</h1>
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="basil" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="media">
+                                <img src="img/testpicture.jpg" class="col-5 d-block" alt="filler">
+                                <div class="media-body text-center my-auto">
+                                    <p>Basil is the middle child. Once upon a time, she was the youngest and the most crazy. Once called "The Little One," she is no longer the youngest with the arrival of her younger sister Rosemary. Now the awkward middle child, Basil is similar to the aliens in MIB.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header text-center" id="rosemary">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="CollapseFour"><h1>Rosemary</h1>
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="rosemary" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="media-body my-auto text-center">
+                                     <p>Rosemary is the latest addition to our pack. She is the youngest, and as expected, the most crazy and active. She has only been part of the pack for a small amount the time but already runs the show. An avid whiner, she will let you know when she is angry or when she is sad.</p>
+                                </div>
+                                <img src="img/testpicture.jpg" class="col-5 d-block" alt="filler">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <footer>
+
 </footer>
+
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
 
 </html>

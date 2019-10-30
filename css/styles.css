@@ -1,5 +1,6 @@
-h3 {
+h1 {
     font-family: 'Modak', cursive;
+    color: grey;
 }
 p {
     font-family: 'Indie Flower', cursive;
@@ -8,4 +9,8 @@ p {
 
 .jumbotron {
     font-family: 'Modak', cursive;
+}
+
+.barimage {
+    max-width: 100%;
 }

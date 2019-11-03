@@ -1,12 +1,4 @@
-$color-background: #e9ecef;
-$color-primary: gray;
-
-
-.passive {
-    color: $color-primary;
-}
-
-h1, h2, h3 {
+h1 {
     font-family: 'Lakki Reddy', cursive;
     color: grey;
 }
@@ -18,7 +10,6 @@ p {
 .jumbotron h1 {
     font-family: 'Lakki Reddy', cursive;
     font-size: 80px;
-    height: 50px;
 }
 
 .jumbotron {
@@ -36,22 +27,4 @@ p {
 
 footer {
     font-family: "Lakki Reddy", cursive;
-}
-
-#spicePupsNavbar {
-    a {
-        color: gray;
-    }
-}
-
-#reserveModal {
-    .modal-header {
-        background-color: $color-background;
-    }
-}
-
-li {
-    a{
-        color: $color-primary;
-    }
 }

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" />
 <!-- endbuild -->
 
-    <link href="https://fonts.googleapis.com/css?family=Lakki+Reddy|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lakki+Reddy|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
 
     <title>The Spiced Pups</title>
 </head>
@@ -22,11 +22,14 @@
 
 <!--Jumbotron Banner-->
 
-<header class="jumbotron my-auto mx-0">
+<header class="jumbotron my-auto mx-0" onclick="animateCSS('.jumbotron', 'bounce')">
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1 class="text-center animated bounceInDown"><i class="fa fa-paw fa-xl"></i> The Spice Pups</h1>
+                <h1 class="animated bounceInDown"><a href="#" role="button"><i class="fa fa-paw fa-lg"></i></a><bold> The Spice Pups</bold></h1>
+            </div>
+            <div class="col">
+                <h2>A Minh Tran creation...</h2>
             </div>
         </div>
     </div>
@@ -34,7 +37,7 @@
 
 <!--NavBar-->
 
-<nav class="navbar navbar-expand-sm sticky-top">
+<nav class="navbar navbar-expand-sm sticky-top p-2">
     <div class="container mx-auto">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#spicePupsNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -49,6 +52,33 @@
         <span><a role="button" class="btn btn-secondary" id="reserveButton">Schedule a Doggy Date</a></span>
     </div>
 </nav>
+
+<!-- Hidden Modals -->
+<div id="rosieModal" class="modal" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Rosie says:</h3>
+            </div>
+            <div class="modal-body">
+                <p>"My dad was very upset with me when I chewed up the tree! It tasted so good though!"</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="basilandcinnModal" class="modal" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Basil & Cinnamon says:</h3>
+            </div>
+            <div class="modal-body">
+                <p>"Our little sister is so bad! She chewed up our favorite plant! This is why we can't have nice things anymore!"</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--Doggy Date Modal-->
 <div id="reserveModal" class="modal" role="dialog">
@@ -102,10 +132,34 @@
 
 <!--First Row of Content-->
 
-<div class="container-fluid p-0">
-    <div class="row">
-        <div class="col">
-            <img src="img/main.JPEG" class="barimage" />
+
+<div class="container-fluid">
+    <div class="row m-5">
+        <div class="col-md-5">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="img/cardimg1.jpg" class="img-fluid rounded" id="rosieTrig">
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h3>Ruff Ruff! Hello friends!</h3>
+                </div>
+                <div class="card-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <p>Welcome to our webpage! We are the Spice Pups! Feel free to click around our home and meet us! We hope you enjoy your stay and make sure to tell our dad what he can do to make your stay more enjoyable!</p>
+                            </div>
+                            <div class="col">
+                                <img src="img/cardimg2.JPG" class="img-fluid rounded" id="basilandcinnTrig">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -128,7 +182,7 @@
                     </div>
                     <div id="collapseOne" class="collapse show" aria-labelledby="meetThePups" data-parent="#accordion">
                         <div class="card-body text-center my-auto col-9 mx-auto">
-                            <p>The Spice Pups are a group Chi-Weenies (Chihuahua mixed with Weener dogs (Dachschund). Their names are Cinnamon, Basil and Rosemary. They love each other and their dads very much.</p>
+                            <p onclick="animateCSS('#meetText', 'bounce')" id="meetText">The Spice Pups are our pack of Chi-Weenies (Chihuahua mixed with Dachschund). Each of their stories are listed below! Come meet the Pups!</p>
                         </div>
                     </div>
                 </div>
@@ -142,11 +196,11 @@
                     <div id="collapseTwo" class="collapse" aria-labelledby="cinnamon" data-parent="#accordion">
                         <div class="card-body">
                             <div class="row">
-                                <div class="text-center my-auto px-5 col-md">
-                                    <p onclick="animateCSS('#cinnamonText', 'bounce')" id="cinnamonText">Cinnamon is the eldest Spice Pup. She is a very reserved, and regal puppy. However, when times call for it, she can show her feisty side with a quick nip to her siblings if they are getting out of control. Affectionately, called "Baby girl," she still retains the princess side of her personality.</p>
+                                <div class="col-md ml-5 pl-5 pr-0">
+                                    <p onclick="animateCSS('#cinnamonText', 'bounce')" id="cinnamonText">Cinnamon is the eldest Spice Pup. She is usually reserved, yet affectionate. A true Chi-Weenie, she loves being cuddled and, of course, food!<br><br>When times call for it, "Baby Girl" can show her feisty side with a quick nip to her siblings if they are getting out of control.</p>
                                 </div>
-                                <div class="col-md-5">
-                                    <img onclick="animateCSS('#cinnamonPic', 'shake')" id="cinnamonPic" src="img/cinnamonaccord.jpg" alt="filler" class="img-fluid">
+                                <div class="col-md-5 text-center">
+                                    <img onclick="animateCSS('#cinnamonPic', 'shake')" id="cinnamonPic" src="img/cinnamonaccord.jpg" alt="filler" class="img-fluid rounded">
                                 </div>
                             </div>
                         </div>
@@ -162,11 +216,11 @@
                     <div id="collapseThree" class="collapse" aria-labelledby="basil" data-parent="#accordion">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-md-5">
-                                    <img src="img/basilaccord.JPG" class="img-fluid" alt="filler">
+                                <div class="col-md-5 pr-0 pl-5 text-center">
+                                    <img onclick="animateCSS('#basilPic', 'shake')" id="basilPic" src="img/basilaccord.JPG" class="img-fluid rounded" alt="filler" style="transform: rotate(90deg)">
                                 </div>
-                                <div class="text-center p-5 col-md my-auto">
-                                    <p>Basil is the middle child. Once upon a time, she was the youngest and the most crazy. Once called "The Little One," she is no longer the youngest with the arrival of her younger sister Rosemary. Now the awkward middle child, Basil is similar to the aliens in MIB.</p>
+                                <div class="col-md mr-5 pr-5 pl-0">
+                                    <p onclick="animateCSS('#basilText', 'bounce')" id="basilText">Basil is our middle child. We're not quite sure whether she is a true Chiweenie, or a Chi-Whippet. Once the youngest of the pack, she was not too excited when Rosemary came along. <br><br>Basil's love for the spotlight has earned her the nickname "The Thunder Stealer" from her nana.</p>
                                 </div>
                             </div>
                         </div>
@@ -174,19 +228,19 @@
                 </div>
                 <div class="card">
                     <div class="card-header text-center" id="rosemary">
-                        <h3 class="mb-0">
+                        <h3>
                             <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="CollapseFour"><h1>Rosemary</h1>
                             </button>
                         </h3>
                     </div>
                     <div id="collapseFour" class="collapse" aria-labelledby="rosemary" data-parent="#accordion">
                         <div class="card-body">
-                            <div class="row">
-                                <div class="col-md my-auto text-center p-5">
-                                     <p>Rosemary is the latest addition to our pack. She is the youngest, and as expected, the most crazy and active. She has only been part of the pack for a small amount the time but already runs the show. An avid whiner, she will let you know when she is angry or when she is sad.</p>
+                            <div class="row row-content">
+                                <div class="col-md ml-5 pl-5 pr-0">
+                                     <p onclick="animateCSS('#rosemaryText', 'bounce')" id="rosemaryText">Rosemary is the latest addition to our pack. She is the youngest, and as expected, the most crazy! Rosie was found in the rain at a nearby park. She came crawling out of a bush and straight into our hearts. <br><br>She has only been part of the pack for a small amount the time but already runs the show. An avid whiner, she will let you know when something is on her mind.</p>
                                 </div>
-                                <div class="col-md-5">
-                                    <img src="img/rosieaccord.png" class="img-fluid" alt="filler">
+                                <div class="col-md-5 pl-0 text-center">
+                                    <img onclick="animateCSS('#rosemaryPic', 'shake')" id="rosemaryPic" src="img/rosieaccord.png" class="rounded" alt="filler">
                                 </div>
                             </div>
                         </div>
@@ -197,10 +251,75 @@
     </div>
 </div>
 
+<!-- Carousel -->
+
+<div class="container">
+    <div class="row mt-2 pt-2 mb-0">
+        <div class="col">
+            <h2 class="text-center">"Baby Girl</h2>
+        </div>
+        <div class="col">
+            <h2 class="text-center">"Little One"</h2>
+        </div>
+        <div class="col">
+            <h2 class="text-center">"Miss Thang"</h2>
+        </div>
+    </div>
+    <div class="row row-content">
+        <div class="col-md-4 mx-auto p-2">
+            <div id="homeCarousel1" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/Carousel1/cinnamonaccord.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Carousel1/56437575270__38F11C93-A864-45A1-94C0-77D627811CDF.jpeg" class="d-block w-100" style="transform: rotate(90deg);">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Carousel1/IMG_8662.JPEG" class="d-block w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mx-auto p-2">
+            <div id="homeCarousel2" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/Carousel2/IMG_0156.JPG" class="d-block w-100" style="transform: rotate(90deg);">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Carousel2/IMG_0157.JPG" class="d-block w-100" style="transform: rotate(90deg);">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Carousel2/IMG_0159.JPG" class="d-block w-100" style="transform: rotate(90deg);">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mx-auto p-2">
+            <div id="homeCarousel3" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/Carousel3/rosieaccord.png" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Carousel3/IMG_7952.JPEG" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Carousel3/IMG_8222.JPEG" class="d-block w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Carousel -->
+</div>
+
+<!-- Footer -->
 
 <footer class="site-footer">
-    <div class="container my-3">
-        <div class="row">
+    <div class="container">
+        <div class="row py-3">
             <div class="col-4 col-sm-2 offset-1">
                 <h5>Links</h5>
                 <ul class="list-unstyled">

@@ -1,28 +1,62 @@
 $color-background: #e9ecef;
 $color-primary: gray;
+$color-transparent-black: rgba(0, 0, 0, .5);
 
+$font-primary: "Lakki Reddy";
+$font-secondary: "Open Sans Condensed";
+$font-tertiary: "Dancing Script";
+
+h2 {
+    font-family: $font-tertiary;
+}
 
 .passive {
     color: $color-primary;
 }
 
-h1, h2, h3 {
-    font-family: 'Lakki Reddy', cursive;
+h1, h3 {
+    font-family: $font-primary, cursive;
     color: grey;
 }
 p {
-    font-family: 'Open Sans Condensed', cursive;
+    font-family: $font-secondary, cursive;
     font-size: 30px;
+}
+
+#accordion {
+    img {
+        max-height: 300px;
+    }
+}
+
+.card {
+    img {
+        max-height: 500px;
+    }
+}
+
+.row-content {
+    padding: 20px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
 }
 
 .jumbotron h1 {
     font-family: 'Lakki Reddy', cursive;
-    font-size: 80px;
+    font-size: 40px;
     height: 50px;
 }
 
 .jumbotron {
+    h2 {
+        text-align: right;
+    }
+}
+
+.jumbotron {
     margin: 0;
+    height: 100px;
+    background-image: linear-gradient(to right, $color-primary, $color-background, $color-primary);
 }
 
 .barimage {
@@ -37,6 +71,7 @@ p {
 
 footer {
     font-family: "Lakki Reddy", cursive;
+    background-image: linear-gradient(to right, $color-primary, $color-background, $color-primary);
 }
 
 #spicePupsNavbar {
@@ -51,8 +86,20 @@ footer {
     }
 }
 
+.modal-header {
+    background-color: $color-background;
+}
+
 li {
     a{
         color: $color-primary;
+    }
+}
+
+.carousel-item {
+    img {
+        width: auto;
+        height: 350px;
+        max-height: 350px;
     }
 }

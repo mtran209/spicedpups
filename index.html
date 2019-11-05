@@ -22,14 +22,14 @@
 
 <!--Jumbotron Banner-->
 
-<header class="jumbotron my-auto mx-0" onclick="animateCSS('.jumbotron', 'bounce')">
+<header class="jumbotron jumbotron-fluid">
     <div class="container">
         <div class="row">
             <div class="col">
                 <h1 class="animated bounceInDown"><a href="#" role="button"><i class="fa fa-paw fa-lg"></i></a><bold> The Spice Pups</bold></h1>
             </div>
             <div class="col">
-                <h2>A Minh Tran creation...</h2>
+                <h2 class="animated slower hinge delay-3s">A Minh Tran creation...</h2>
             </div>
         </div>
     </div>
@@ -49,7 +49,7 @@
                 <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-info fa-lg"></i> Contact Us</a></li>
             </ul>
         </div>
-        <span><a role="button" class="btn btn-secondary" id="reserveButton">Schedule a Doggy Date</a></span>
+        <span><a role="button" class="btn btn-secondary delay-2s" id="reserveButton">Schedule a Doggy Date</a></span>
     </div>
 </nav>
 
@@ -138,22 +138,23 @@
         <div class="col-md-5">
             <div class="card">
                 <div class="card-body text-center">
-                    <img src="img/cardimg1.jpg" class="img-fluid rounded" id="rosieTrig">
+                    <img src="img/cardimg1.jpg" class="img-fluid rounded delay-1s" id="rosieTrig">
                 </div>
             </div>
         </div>
         <div class="col-md">
             <div class="card">
                 <div class="card-header text-center">
-                    <h3>Ruff Ruff! Hello friends!</h3>
+                    <h3 id='welcomeHeader'>Ruff Ruff! Hello friends!</h3>
                 </div>
                 <div class="card-body">
                     <div class="container">
                         <div class="row">
-                            <div class="col">
-                                <p>Welcome to our webpage! We are the Spice Pups! Feel free to click around our home and meet us! We hope you enjoy your stay and make sure to tell our dad what he can do to make your stay more enjoyable!</p>
+                            <div class="col-lg-8">
+                                <p id="welcomeText" class="delay-2s">Welcome to our webpage! We are the Spice Pups! Feel free to click around our home and meet us! We hope you enjoy your stay and make sure to tell our dad what he can do to make your stay more enjoyable!</p>
+                                <button id="implode" class="btn btn-lg btn-danger animated delay-3s bounceInUp" id="implode">DO NOT CLICK THE RED BUTTON</button>
                             </div>
-                            <div class="col">
+                            <div class="col-lg">
                                 <img src="img/cardimg2.JPG" class="img-fluid rounded" id="basilandcinnTrig">
                             </div>
                         </div>
@@ -182,7 +183,7 @@
                     </div>
                     <div id="collapseOne" class="collapse show" aria-labelledby="meetThePups" data-parent="#accordion">
                         <div class="card-body text-center my-auto col-9 mx-auto">
-                            <p onclick="animateCSS('#meetText', 'bounce')" id="meetText">The Spice Pups are our pack of Chi-Weenies (Chihuahua mixed with Dachschund). Each of their stories are listed below! Come meet the Pups!</p>
+                            <p id="meetText">The Spice Pups are our pack of Chi-Weenies (Chihuahua mixed with Dachschund). Each of their stories are listed below! Come meet the Pups!</p>
                         </div>
                     </div>
                 </div>
@@ -197,10 +198,10 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md ml-5 pl-5 pr-0">
-                                    <p onclick="animateCSS('#cinnamonText', 'bounce')" id="cinnamonText">Cinnamon is the eldest Spice Pup. She is usually reserved, yet affectionate. A true Chi-Weenie, she loves being cuddled and, of course, food!<br><br>When times call for it, "Baby Girl" can show her feisty side with a quick nip to her siblings if they are getting out of control.</p>
+                                    <p id="cinnamonText">Cinnamon is the eldest Spice Pup. She is usually reserved, yet affectionate. A true Chi-Weenie, she loves being cuddled and, of course, food!<br><br>When times call for it, "Baby Girl" can show her feisty side with a quick nip to her siblings if they are getting out of control.</p>
                                 </div>
                                 <div class="col-md-5 text-center">
-                                    <img onclick="animateCSS('#cinnamonPic', 'shake')" id="cinnamonPic" src="img/cinnamonaccord.jpg" alt="filler" class="img-fluid rounded">
+                                    <img id="cinnamonPic" src="img/cinnamonaccord.jpg" alt="filler" class="img-fluid rounded">
                                 </div>
                             </div>
                         </div>
@@ -217,10 +218,10 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-5 pr-0 pl-5 text-center">
-                                    <img onclick="animateCSS('#basilPic', 'shake')" id="basilPic" src="img/basilaccord.JPG" class="img-fluid rounded" alt="filler" style="transform: rotate(90deg)">
+                                    <img id="basilPic" src="img/basilaccord.JPG" class="img-fluid rounded" alt="filler" style="transform: rotate(90deg)">
                                 </div>
                                 <div class="col-md mr-5 pr-5 pl-0">
-                                    <p onclick="animateCSS('#basilText', 'bounce')" id="basilText">Basil is our middle child. We're not quite sure whether she is a true Chiweenie, or a Chi-Whippet. Once the youngest of the pack, she was not too excited when Rosemary came along. <br><br>Basil's love for the spotlight has earned her the nickname "The Thunder Stealer" from her nana.</p>
+                                    <p id="basilText">Basil is our middle child. We're not quite sure whether she is a true Chiweenie, or a Chi-Whippet. Once the youngest of the pack, she was not too excited when Rosemary came along. <br><br>Basil's love for the spotlight has earned her the nickname "The Thunder Stealer" from her nana.</p>
                                 </div>
                             </div>
                         </div>
@@ -237,10 +238,10 @@
                         <div class="card-body">
                             <div class="row row-content">
                                 <div class="col-md ml-5 pl-5 pr-0">
-                                     <p onclick="animateCSS('#rosemaryText', 'bounce')" id="rosemaryText">Rosemary is the latest addition to our pack. She is the youngest, and as expected, the most crazy! Rosie was found in the rain at a nearby park. She came crawling out of a bush and straight into our hearts. <br><br>She has only been part of the pack for a small amount the time but already runs the show. An avid whiner, she will let you know when something is on her mind.</p>
+                                     <p id="rosemaryText">Rosemary is the latest addition to our pack. She is the youngest, and as expected, the most crazy! Rosie was found in the rain at a nearby park. She came crawling out of a bush and straight into our hearts. <br><br>She has only been part of the pack for a small amount the time but already runs the show. An avid whiner, she will let you know when something is on her mind.</p>
                                 </div>
                                 <div class="col-md-5 pl-0 text-center">
-                                    <img onclick="animateCSS('#rosemaryPic', 'shake')" id="rosemaryPic" src="img/rosieaccord.png" class="rounded" alt="filler">
+                                    <img id="rosemaryPic" src="img/rosieaccord.png" class="rounded" alt="filler">
                                 </div>
                             </div>
                         </div>
@@ -256,13 +257,13 @@
 <div class="container">
     <div class="row mt-2 pt-2 mb-0">
         <div class="col">
-            <h2 class="text-center">"Baby Girl</h2>
+            <h2 id="babygirl" class="text-center">"Baby Girl</h2>
         </div>
         <div class="col">
-            <h2 class="text-center">"Little One"</h2>
+            <h2 id="littleone" class="text-center">"Little One"</h2>
         </div>
         <div class="col">
-            <h2 class="text-center">"Miss Thang"</h2>
+            <h2 id="missthang" class="text-center">"Miss Thang"</h2>
         </div>
     </div>
     <div class="row row-content">
